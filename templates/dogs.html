@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Doggos</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet" />
+        <style>
+            html {
+                font-family: Poppins;
+                font-size: 10px;
+            }
+            body {
+                margin: 0;
+                height: 100vh;
+                overflow: hidden;
+                background-color: skyblue;
+                background-image: linear-gradient(90deg, skyblue 0%, steelblue 100%);
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1 {
+                color: white;
+                font-size: 5rem;
+                text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            }
+            #dog {
+                border: dashed white 1px;
+            }
+            #dog img {
+                display: block;
+                max-width: 60vw;
+                max-height: 80vh;
+                box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Random Dogs</h1>
+        <div id="dog">
+            <{{ image_or_video }} src="{{ url }}" />
+        </div>
+    </body>
+</html>
